@@ -4,7 +4,7 @@ const Button = ({ type = "button", text, href, onClick, disabled = false }) => {
     switch (type) {
         case "link": // Retourne un lien <a> si le type est "link"
             return (
-                <a href={href} target='_blank' rel="noreferrer" >{text}</a>
+                <a href={href} target='_blank' rel="noopener noreferrer" >{text}</a>
             );
         case "submit": // Retourne un bouton de type "submit"
             return (

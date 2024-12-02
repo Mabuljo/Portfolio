@@ -1,0 +1,191 @@
+[
+	{
+		"id": 1,
+		"title": "Riding Cities",
+		"cover": "./assets/images/projets/ridingCities/riding_cities.webp",
+		"pictures": [
+            "./assets/images/projets/ridingCities/riding_cities.webp"
+		],
+		"description": [
+			"Mettre à jour la page internet d'une association sportive.",
+			"Premiers pas sur le langage HTML.",
+			"Intégrer des éléments sur une page web en utilisant les fondamentaux de HTML."
+		],
+		"technologies": [
+			"HTML",
+			"CSS"
+		]
+	},
+
+	{
+		"id": 2,
+		"title": "Booki",
+		"cover": "booki1",
+		"pictures": [
+            "booki1",
+            "booki2",
+            "booki3",
+			"booki4",
+			"booki5"
+		],
+		"description": [
+			"Créer la page d'accueil d'une agence de voyage avec HTML et CSS.",
+            "Installer un environnement de développement front-end.",
+            "Intégrer du contenu avec HTML et CSS conformément à une maquette Figma.",
+            "Implémenter une interface responsive avec HTML et CSS pour desktop, tablette et mobile.",
+            "Valider le code avec les standards W3C."
+        ],
+		"technologies": [
+			"HTML",
+			"CSS"
+		]
+	},
+    
+    {
+		"id": 3,
+		"title": "Ohmyfood",
+		"cover": "ohmyfood1",
+		"pictures": [
+            "ohmyfood1",
+			"ohmyfood2",
+			"ohmyfood3",
+			"ohmyfood4"
+		],
+		"description": [
+			"Améliorer l'interface du site mobile d'une start-up avec des animations CSS.",
+            "Intégrer une maquette en mobile-first.",
+            "Intégrer des animations CSS.",
+            "Implémenter une interface responsive.",
+            "Utiliser le pré-processeur CSS, SASS."
+        ],
+		"technologies": [
+			"HTML",
+			"Sass"
+		]
+	},
+
+	{
+		"id": 4,
+		"title": "Printit",
+		"cover": "printit1",
+		"pictures": [
+            "printit1",
+			"printit2",
+			"printit3",
+			"printit4",
+			"printit5"
+		],
+		"description": [
+			"Dynamiser le site internet statique d'une imprimerie.",
+            "Explorer les fondamentaux du langage JavaScript.",
+            "Création d'un carrousel dynamique avec Javascript.",
+            "Implémenter une interface responsive avec HTML et CSS pour desktop, tablette et mobile.",
+            "Comprendre comment JavaScript interagit avec le HTML et le CSS."
+        ],
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		]
+	},
+
+	{
+		"id": 5,
+		"title": "Sophie Bluel",
+		"cover": "sophie_bluel1",
+		"pictures": [
+           "sophie_bluel1",
+		   "sophie_bluel2",
+		   "sophie_bluel3",
+		   "sophie_bluel4"
+		],
+		"description": [
+			"Créer le site portfolio d'une architecte d'intérieur.",
+            "Créer une page web dynamique en utilisant Javascript.",
+            "Apprendre à communiquer avec une API.",
+            "Manipuler les éléments du DOM avec JavaScript.",
+            "Créer une formulaire de connexion.",
+			"Créer une modale afin d'ajouter de nouvelles données."
+        ],
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		]
+	},
+
+	{
+		"id": 6,
+		"title": "Kasa",
+		"cover": "kasa1",
+		"pictures": [
+           "kasa1",
+		   "kasa2",
+		   "kasa3",
+		   "kasa4",
+		   "kasa5"
+		],
+		"description": [
+            "Créer une application web de location immobilière avec React.",
+            "Configurer la navigation entre les pages de l'application avec React Router.",
+            "Développer des éléments de l'interface d'un site web grâce aux composants React.",
+            "Mettre en oeuvre des animation CSS.",
+			"Développer une interface web avec Sass."
+        ],
+		"technologies": [
+			"HTML",
+			"Sass",
+			"JavaScript",
+			"React"
+		]
+	},
+
+	{
+		"id": 7,
+		"title": "Nina Carducci",
+		"cover": "nina_carducci1",
+		"pictures": [
+          "nina_carducci1",
+		  "nina_carducci2",
+		  "nina_carducci3",
+		  "nina_carducci4"
+		],
+		"description": [
+            "Optimiser le référencement d'un site d'une photographe.",
+            "Réaliser un audit initial avec Lighthouse afin d'identifier les problèmes de chargement et de référencement.",
+            "Améliorer les performances et l'accessibilité du site en utilsant les outils Lighthouse et Wave.",
+            "Ajouter le référencement local avec schema.org.",
+			"Intégrer les métadonnées pour les réseaux sociaux",
+			"Réaliser un rapport d'audit complet après amélioration du site."
+        ],
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript"
+		]
+	},
+
+	{
+		"id": 8,
+		"title": "Argent Bank",
+		"cover": "argentbank",
+		"pictures": [
+          "argentbank"
+		],
+		"description": [
+            "Implémenter le front-end d'une application bancaire avec React.",
+            "Intégrer le front-end avec le back-end via des appels API.",
+            "Utiliser React pour développer l'interface utilisateur.",
+            "Utiliser Redux et Redux Toolkit pour gérer les données de l'application et maintenir un état global cohérent au travers de l'application.",
+			"Utiliser Swagger pour définir les points d'accès de l'API et décrire les différentes routes et actions nécessaires pour l'API.",
+			"Utiliser Node.js et MongoDB pour exécuter le code JavaScript côté serveur."
+        ],
+		"technologies": [
+			"HTML",
+			"CSS",
+			"JavaScript",
+			"React",
+			"Redux"
+		]
+	}
+]
