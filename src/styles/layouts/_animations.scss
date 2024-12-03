@@ -1,6 +1,15 @@
+/*** Animation de l'écran d'accueil noir ***/ 
 @keyframes animBefore {
     to {
         opacity: 0;
         z-index: -1;
+    }
+}
+
+/*** Animation du header ***/
+@keyframes headerAnim {
+    to{
+        transform: translateY(0);
+        opacity: 1;
     }
 }
