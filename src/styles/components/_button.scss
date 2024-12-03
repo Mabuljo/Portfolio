@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+    background-color: $main-color;
+    color: $background-color;
+    font-weight: 800;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 25px;
+    height: 45px;
+    min-width: 170px;
+}
+
+.submit {
+    background-color: $background-color;
+    color: $main-color;
+}
+
+.link {
+    padding-left: 20px;
+    padding-right: 20px;
+}

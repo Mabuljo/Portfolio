@@ -13,15 +13,14 @@ const Portfolio = () => {
 
     return (
         <div>
-            <h1>"Chaque pixel, chaque ligne de code est une histoire à raconter"</h1>
             <Header />
-            <main>
+            <main id='main'>
                 <section id='presentation'>
                     <h2>Présentation</h2>
                     <div>
                         <img src={photoPresentation} alt="Marjorie Goudet" />
                         <div>
-                            <p>
+                            <p>    
                                 Qua nec flatus diversitate esse et esse esse nascitur vero quicquid potest liberis Romae vero credi inanes aestimant caelibes quorundam praeter sine orbos obsequiorum quorundam orbos esse credi credi qua.
                             </p>
                             <Button type='link' href="/" text="Consulter mon CV"/>
