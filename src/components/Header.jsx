@@ -14,7 +14,7 @@ const Header = () => {
                 <a href="#competences">Compétences</a>
                 <a href="#projets">Projets</a>
                 <a href="#contact">Contact</a>
-                <a href="/">Mon C V</a>
+                <a href="/">Mon CV</a>
             </nav>
         </header>
     );
