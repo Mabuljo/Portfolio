@@ -61,15 +61,18 @@ const Portfolio = () => {
                                 type='button' 
                                 text={tech} 
                                 onClick={() => handleTechChange(tech)} 
+                                isSelected={selectedTech === tech} // si la prop isSelected est true, on applique la className "btn-selected"
                                 />
                             ))}
                         </div>
                         <div className='projets_cards'>
                             {Projets.filter(projet => {
                                 
-                                if (!selectedTech) return true; // Si aucun filtre, afficher tous les projets
-                               
+                                if (!selectedTech) {
+                                    return true; // Si aucune technologie sélectionnée, afficher tous les projets
+                                } else {
                                 return projet.technologies.includes(selectedTech);  // Vérifier si la technologie du projet correspond au filtre
+                                }
                             }).map((projet) => (
                                 <Card projet={projet} key={projet.id} />
                             ))}

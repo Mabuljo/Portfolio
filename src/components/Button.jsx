@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ type = "button", text, href, onClick, disabled = false }) => {
+const Button = ({ type = "button", text, href, onClick, disabled = false, isSelected }) => {
     switch (type) {
         case "link": // Retourne un lien <a> si le type est "link"
             return (
@@ -12,7 +12,7 @@ const Button = ({ type = "button", text, href, onClick, disabled = false }) => {
             );
         default: // Retourne un bouton classique de type "button"
             return (
-                <button type='button' className='btn' onClick={onClick}>{text}</button>
+                <button type='button' className={`btn ${isSelected ? 'btn-selected' : ''}`} onClick={onClick}>{text}</button>
             )
     }
 };

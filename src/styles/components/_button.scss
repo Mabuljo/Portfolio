@@ -20,6 +20,11 @@
     }
 }
 
+.btn-selected {
+    background-color: settings.$secondary-color;
+    color: settings.$main-color;
+}
+
 .submit {
     background-color: settings.$background-color;
     color: settings.$main-color;
