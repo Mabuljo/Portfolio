@@ -2,13 +2,15 @@ import React from 'react';
 
 const Card = ({ projet }) => {
     return (
-        <div>
+        <div className='card'>
             <img src={projet.cover} alt={projet.title} />
-            <h3>{projet.title}</h3>
-            <div>
-                {projet.technologies.map((tech, index) => (
+            <div className='card_content'>
+                <h3>{projet.title}</h3>
+                <div className='card_content--techno'>
+                    {projet.technologies.map((tech, index) => (
                     <span key={index}>{tech}</span>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );

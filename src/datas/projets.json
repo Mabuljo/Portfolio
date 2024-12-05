@@ -2,10 +2,7 @@
 	{
 		"id": 1,
 		"title": "Riding Cities",
-		"cover": "./assets/images/projets/ridingCities/riding_cities.webp",
-		"pictures": [
-            "./assets/images/projets/ridingCities/riding_cities.webp"
-		],
+		"cover": "/projets/riding_cities.webp",
 		"description": [
 			"Mettre à jour la page internet d'une association sportive.",
 			"Premiers pas sur le langage HTML.",
@@ -20,14 +17,7 @@
 	{
 		"id": 2,
 		"title": "Booki",
-		"cover": "booki1",
-		"pictures": [
-            "booki1",
-            "booki2",
-            "booki3",
-			"booki4",
-			"booki5"
-		],
+		"cover": "/projets/booki.webp",
 		"description": [
 			"Créer la page d'accueil d'une agence de voyage avec HTML et CSS.",
             "Installer un environnement de développement front-end.",
@@ -44,13 +34,7 @@
     {
 		"id": 3,
 		"title": "Ohmyfood",
-		"cover": "ohmyfood1",
-		"pictures": [
-            "ohmyfood1",
-			"ohmyfood2",
-			"ohmyfood3",
-			"ohmyfood4"
-		],
+		"cover": "/projets/ohmyfood.webp",
 		"description": [
 			"Améliorer l'interface du site mobile d'une start-up avec des animations CSS.",
             "Intégrer une maquette en mobile-first.",
@@ -67,14 +51,7 @@
 	{
 		"id": 4,
 		"title": "Printit",
-		"cover": "printit1",
-		"pictures": [
-            "printit1",
-			"printit2",
-			"printit3",
-			"printit4",
-			"printit5"
-		],
+		"cover": "/projets/printit.webp",
 		"description": [
 			"Dynamiser le site internet statique d'une imprimerie.",
             "Explorer les fondamentaux du langage JavaScript.",
@@ -92,13 +69,7 @@
 	{
 		"id": 5,
 		"title": "Sophie Bluel",
-		"cover": "sophie_bluel1",
-		"pictures": [
-           "sophie_bluel1",
-		   "sophie_bluel2",
-		   "sophie_bluel3",
-		   "sophie_bluel4"
-		],
+		"cover": "/projets/sophie_bluel.webp",
 		"description": [
 			"Créer le site portfolio d'une architecte d'intérieur.",
             "Créer une page web dynamique en utilisant Javascript.",
@@ -117,14 +88,7 @@
 	{
 		"id": 6,
 		"title": "Kasa",
-		"cover": "kasa1",
-		"pictures": [
-           "kasa1",
-		   "kasa2",
-		   "kasa3",
-		   "kasa4",
-		   "kasa5"
-		],
+		"cover": "/projets/kasa.webp",
 		"description": [
             "Créer une application web de location immobilière avec React.",
             "Configurer la navigation entre les pages de l'application avec React Router.",
@@ -143,13 +107,7 @@
 	{
 		"id": 7,
 		"title": "Nina Carducci",
-		"cover": "nina_carducci1",
-		"pictures": [
-          "nina_carducci1",
-		  "nina_carducci2",
-		  "nina_carducci3",
-		  "nina_carducci4"
-		],
+		"cover": "/projets/nina_carducci.webp",
 		"description": [
             "Optimiser le référencement d'un site d'une photographe.",
             "Réaliser un audit initial avec Lighthouse afin d'identifier les problèmes de chargement et de référencement.",
@@ -168,10 +126,7 @@
 	{
 		"id": 8,
 		"title": "Argent Bank",
-		"cover": "argentbank",
-		"pictures": [
-          "argentbank"
-		],
+		"cover": "/projets/argentbank.webp",
 		"description": [
             "Implémenter le front-end d'une application bancaire avec React.",
             "Intégrer le front-end avec le back-end via des appels API.",

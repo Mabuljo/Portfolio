@@ -1,15 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../components/Header';
 import photoPresentation from '../assets/images/marjo-sepia.webp';
 import Button from '../components/Button';
 import Icon from '../components/Icon';
 import Projets from "../datas/projets.json";
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 
 const Portfolio = () => {
 
     const iconNames = ['html5','css3','javascript','react','redux','sass','notion','github','figma']; // Liste des logos avec le nom de chaque fichier d'image (sans extension)
+
+    const [selectedTech, setSelectedTech] = useState(''); // Etat pour la techno sélectionnée
+
+    // Liste des technologies
+    const technologies = ['Tous', 'Sass', 'JavaScript', 'React'];
+
+    // Fonction qui met à jour le filtre en fonction du bouton cliqué
+    const handleTechChange = (tech) => {
+        setSelectedTech(tech === 'Tous' ? '' : tech); // Si on clique sur 'Tous', on réinitialise les technologies
+    }
 
     return (
         <div>
@@ -17,9 +28,9 @@ const Portfolio = () => {
             <main id='main'>
                 <section id='presentation'>
                     <h2>Présentation</h2>
-                    <div>
+                    <div className='presentation_content'>
                         <img src={photoPresentation} alt="Marjorie Goudet" />
-                        <div>
+                        <div className='presentation_content--details'>
                             <p>    
                                 Qua nec flatus diversitate esse et esse esse nascitur vero quicquid potest liberis Romae vero credi inanes aestimant caelibes quorundam praeter sine orbos obsequiorum quorundam orbos esse credi credi qua.
                             </p>
@@ -30,7 +41,7 @@ const Portfolio = () => {
 
                 <section id='competences'>
                     <h2>Compétences</h2>
-                    <div>
+                    <div className='competences'>
                         {iconNames.map((iconName, index) => {
                             const imagePath = require(`../assets/icones/${iconName}.png`)
                             return (
@@ -42,15 +53,24 @@ const Portfolio = () => {
 
                 <section id='projets'>
                     <h2>Mes projets</h2>
-                    <div>
-                        <div>
-                            <Button type='button' text="Tous"/>
-                            <Button type='button' text="Sass"/>
-                            <Button type='button' text="JavaScript"/>
-                            <Button type='button' text="React"/>
+                    <div className='projets'>
+                        <div className='projets_buttons'>
+                            {technologies.map((tech, index) => (
+                                <Button 
+                                key={index} 
+                                type='button' 
+                                text={tech} 
+                                onClick={() => handleTechChange(tech)} 
+                                />
+                            ))}
                         </div>
-                        <div>
-                            {Projets.map((projet) =>(
+                        <div className='projets_cards'>
+                            {Projets.filter(projet => {
+                                
+                                if (!selectedTech) return true; // Si aucun filtre, afficher tous les projets
+                               
+                                return projet.technologies.includes(selectedTech);  // Vérifier si la technologie du projet correspond au filtre
+                            }).map((projet) => (
                                 <Card projet={projet} key={projet.id} />
                             ))}
                         </div>
@@ -80,6 +100,7 @@ const Portfolio = () => {
                     </form>
                  </section>
             </main>
+            <Footer />
         </div>
     );
 };

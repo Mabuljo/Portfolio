@@ -6,14 +6,13 @@ $font-text: 'Lora',serif;
 
 // Variables
 $main-color: #513307;
-$secondary-color: #C5B6A8;
+$secondary-color: #DDCEAA;
 $background-color: #FBF9EC;
 
 // Mixins
 @mixin policeText {
     font-family: $font-text;
     font-style: italic;
-    color: $main-color;
 }
 
 
@@ -61,6 +60,11 @@ body {
 
 h1, h2, h3 {
     font-family: $font-title;
+    color: $main-color;
+}
+
+p {
+    color: $main-color;
 }
 
 

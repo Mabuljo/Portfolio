@@ -1,0 +1,27 @@
+@use '../settings';
+
+footer {
+    width: 85%;
+    margin: 0 auto;
+    background: settings.$background-color;
+    border-radius: 25px 25px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer_logo {
+        width: 100px;
+        height: 100px;
+        border-radius: 25px 25px 0 0;
+    }
+    
+    .reseaux {
+        font-size: 2rem;
+        min-width: 100px;
+        max-width: 300px;
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 10px;
+    }
+}
