@@ -3,15 +3,15 @@
 .error {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     min-height: 100vh;
-    margin: 0;
+
 
     .container {
         width: 85%;
-        margin: 0 auto 30px;
+        margin: 20px auto 30px;
         background: settings.$background-color;     
         border-radius: 25px;
         .content {

@@ -23,5 +23,11 @@ footer {
         display: flex;
         justify-content: space-around;
         margin-right: 10px;
+        a {
+            color: settings.$main-color ;
+            &:visited {
+                color: settings.$main-color;
+            }
+        }
     }
 }
