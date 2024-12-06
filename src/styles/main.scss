@@ -1,8 +1,12 @@
+
 @use "./settings";
 @use "./pages/portfolio";
 @use "./pages/error";
 @use "./layouts/animations";
+@use"./layouts/mixins";
 @use "./layouts/header";
 @use "./layouts/footer";
 @use "./components/button";
+@use"./components/icon";
 @use"./components/card";
+@use"./components/form";

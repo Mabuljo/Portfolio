@@ -1,4 +1,6 @@
-// regroupe toutes les variables, mixin et style général du projet
+// regroupe toutes les variables et style général du projet
+
+@use"./layouts/mixins";
 
 // Polices
 $font-title: 'Great Vibes';
@@ -8,13 +10,6 @@ $font-text: 'Lora',serif;
 $main-color: #513307;
 $secondary-color: #DDCEAA;
 $background-color: #FBF9EC;
-
-// Mixins
-@mixin policeText {
-    font-family: $font-text;
-    font-style: italic;
-}
-
 
 // Général
 html, body {
@@ -55,7 +50,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    @include policeText;
+    @include mixins.policeText;
 }
 
 h1, h2, h3 {

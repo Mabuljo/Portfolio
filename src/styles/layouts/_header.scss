@@ -1,14 +1,12 @@
 @use '../settings';
+@use"./mixins";
 
 header {
     position: relative;
     min-height: 100vh;
 
     .header-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include mixins.displayFlex;
         text-align: center;
         min-height: 100vh;
         opacity: 0;
@@ -19,7 +17,6 @@ header {
             color: settings.$background-color;
             font-size: 7.5rem;
             font-weight: normal;
-            margin-bottom: 30px;
         }
         
         span {
@@ -34,7 +31,6 @@ header {
             .fa-arrow-down {
                 color: settings.$background-color;
             }
-
         }
     }
 
