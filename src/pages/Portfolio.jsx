@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import Header from '../components/Header';
 import photoPresentation from '../assets/images/marjo-sepia.webp';
 import Button from '../components/Button';
@@ -7,21 +7,40 @@ import Projets from "../datas/projets.json";
 import Card from '../components/Card';
 import Form from '../components/Form';
 import Footer from '../components/Footer';
+import Modal from '../components/Modal';
 
 
 const Portfolio = () => {
 
-    const iconNames = ['html5','css3','javascript','react','redux','sass','notion','github','figma']; // Liste des logos avec le nom de chaque fichier d'image (sans extension)
+    // Liste des logos avec le nom de chaque fichier d'image (sans extension)
+    const iconNames = ['html5','css3','javascript','react','redux','sass','notion','github','figma']; 
 
-    const [selectedTech, setSelectedTech] = useState(''); // Etat pour la techno sélectionnée
-
+    // Etat pour la technologie sélectionnée
+    const [selectedTech, setSelectedTech] = useState(''); 
     // Liste des technologies
     const technologies = ['Tous', 'Sass', 'JavaScript', 'React'];
 
-    // Fonction qui met à jour le filtre en fonction du bouton cliqué
+    // Fonction qui met à jour les projets en fonction du bouton cliqué
     const handleTechChange = (tech) => {
         setSelectedTech(tech === 'Tous' ? '' : tech); // Si on clique sur 'Tous', on réinitialise les technologies
     }
+
+    // Variables et Fonction pour la Modale
+    const [modal, setModal] = useState(false);
+    const [selectedProjet, setSelectedProjet] = useState(null); // Etat pour le projet sélectionné
+
+    const toggleModal = (projet) => {
+        setModal(!modal); // Ouvre ou ferme la modale
+        setSelectedProjet(projet || null);// Met à jour le projet sélectionné
+    }
+
+    useEffect(() => {
+        if (modal) {
+            document.body.classList.add('active-modal'); // Ajoute la classe quand modal est true
+        } else {
+            document.body.classList.remove('active-modal'); // Retire la classe quand modal est false
+        }
+    }, [modal]); // Effectue l'effet chaque fois que 'modal' change
 
     return (
         <div>
@@ -68,26 +87,24 @@ const Portfolio = () => {
                         </div>
                         <div className='projets_cards'>
                             {Projets.filter(projet => {
-                                
                                 if (!selectedTech) {
                                     return true; // Si aucune technologie sélectionnée, afficher tous les projets
                                 } else {
                                 return projet.technologies.includes(selectedTech);  // Vérifier si la technologie du projet correspond au filtre
                                 }
                             }).map((projet) => (
-                                <Card projet={projet} key={projet.id} />
+                                <Card projet={projet} key={projet.id} toggleModal={() => toggleModal(projet)} /> // Passe le projet cliqué
                             ))}
                         </div>
                     </div>
                 </section>
-                <aside>
-                {/* modale */}
-                </aside>
-                 
+
                 <section id='contact'>
                     <h2>Me contacter</h2>   
                     <Form />
                  </section>
+                 {/* Affichage conditionnel de la modale */}
+                 {modal && <Modal projet={selectedProjet} toggleModal={toggleModal} />}
             </main>
             <Footer />
         </div>

@@ -30,7 +30,7 @@ body {
     &::before {
         content: "";
         position: absolute;
-        z-index: 2;
+        z-index: 10;
         height: 100%;
         width: 100%;
         top: 0;
@@ -53,7 +53,7 @@ body {
     @include mixins.policeText;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: $font-title;
     color: $main-color;
 }

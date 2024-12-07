@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Card = ({ projet }) => {
+const Card = ({ projet, toggleModal }) => {
+
     return (
-        <div className='card'>
+        <div className='card' onClick={toggleModal}>
             <img src={projet.cover} alt={projet.title} />
             <div className='card_content'>
                 <h3>{projet.title}</h3>

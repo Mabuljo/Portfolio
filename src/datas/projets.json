@@ -11,7 +11,9 @@
 		"technologies": [
 			"HTML",
 			"CSS"
-		]
+		],
+		"github": "https://github.com/Mabuljo/Riding-Cities",
+		"site":"https://mabuljo.github.io/Riding-Cities/"
 	},
 
 	{
@@ -28,7 +30,9 @@
 		"technologies": [
 			"HTML",
 			"CSS"
-		]
+		],
+		"github": "https://github.com/Mabuljo/booki",
+		"site":"https://mabuljo.github.io/booki/"
 	},
     
     {
@@ -45,7 +49,9 @@
 		"technologies": [
 			"HTML",
 			"Sass"
-		]
+		],
+		"github": "https://github.com/Mabuljo/ohmyfood",
+		"site":"https://mabuljo.github.io/ohmyfood/"
 	},
 
 	{
@@ -63,7 +69,9 @@
 			"HTML",
 			"CSS",
 			"JavaScript"
-		]
+		],
+		"github": "https://github.com/Mabuljo/printit",
+		"site":"https://mabuljo.github.io/printit/"
 	},
 
 	{
@@ -82,7 +90,8 @@
 			"HTML",
 			"CSS",
 			"JavaScript"
-		]
+		],
+		"github": "https://github.com/Mabuljo/Sophie-Bluel"
 	},
 
 	{
@@ -101,7 +110,8 @@
 			"Sass",
 			"JavaScript",
 			"React"
-		]
+		],
+		"github": "https://github.com/Mabuljo/Kasa"
 	},
 
 	{
@@ -120,7 +130,9 @@
 			"HTML",
 			"CSS",
 			"JavaScript"
-		]
+		],
+		"github": "https://github.com/Mabuljo/Nina-Carducci",
+		"site":"https://mabuljo.github.io/Nina-Carducci/"
 	},
 
 	{
@@ -141,6 +153,7 @@
 			"JavaScript",
 			"React",
 			"Redux"
-		]
+		],
+		"github": "https://github.com/Mabuljo/Argentbank"
 	}
 ]
