@@ -7,6 +7,9 @@ main {
 
     #presentation {
         border-radius:0 0 25px 25px;
+        @media (max-width: 768px){
+            border-radius: 25px;
+        }
     }
 
     #competences, #projets, #contact {
@@ -18,13 +21,17 @@ main {
         margin: 0 auto 50px;
         padding: 50px;
         background: settings.$background-color;
+        @media (max-width: 768px){
+            padding: 30px;
+            }
+
 
         h2 {
             font-size: 5rem;
             padding: 0 0 20px 0;
             position: relative;
             display: block;
-            &:before, &::after {
+            &:before, &:after {
                 content: "";
                 position: absolute;
                 width: 28%;
@@ -35,12 +42,25 @@ main {
             }
             &:before {
                 left: 0;
-            }
+                @media (max-width: 768px){
+                    display: none;
+                    }
+                }
             &:after {
                 right: 0;
+                @media (max-width: 768px){
+                    width: 50%;
+                    transform: translateX(-50%) translateY(20px);
+                    }
+            }
+
+            @media (max-width: 1024px){
+                font-size: 3rem;
+                padding: 0 0 20px 0;
             }
         }
     }
+
     .presentation_content {
         display: flex;
         justify-content: center;
@@ -55,7 +75,16 @@ main {
             @include mixins.displayFlex;
             text-align: justify;
             padding-left: 50px;
+            @media (max-width:768px){
+                padding: 20px 0 0 0;
+                gap: 20px;
+            }
         }
+        @media (max-width:768px){
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
     .competences {
         display: grid;
@@ -63,13 +92,24 @@ main {
         justify-content: center;
         place-items: center;
         gap: 50px;
+        @media (max-width:1024px){
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            img {height: 80%;} 
+        }
+        @media (max-width:768px){
+            grid-template-columns: 1fr;
+            gap: 0;
+            img {height: 50%;}
+        }
     }
 
     .projets {
         @include mixins.displayFlex;
 
         &_buttons {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
             gap: 50px;
@@ -81,6 +121,14 @@ main {
             justify-content: center;
             place-items: center;
             gap: 50px;
+        }
+
+        &_buttons, &_cards {
+            @media (max-width:1024px){
+                gap: 20px;
+                grid-template-columns: 1fr 1fr;
+            }
+            @media (max-width:768px){grid-template-columns: 1fr;}
         }
     }
 }
