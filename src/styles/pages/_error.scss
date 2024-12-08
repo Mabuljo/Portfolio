@@ -17,15 +17,20 @@
         .content {
             width: 100%;
             margin: 0 auto 50px;
+            padding-top: 20px;
 
             img {
                 width: 80%;
                 height: 50vh;
+                padding-bottom: 20px;
             }
 
             h1, h2 {
                 font-size: 4rem;
-                padding-bottom: 30px;
+                padding: 0 10px 20px 10px;
+                @media (max-width: 1024px){
+                    font-size: 3rem;}
+                @media (max-width: 768px){font-size: 2rem;}
             } 
         }
     }

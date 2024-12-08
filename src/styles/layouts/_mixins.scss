@@ -12,3 +12,9 @@
     align-items: center;
     gap: 50px;
 }
+@mixin displayGrid {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    gap: 50px;
+}

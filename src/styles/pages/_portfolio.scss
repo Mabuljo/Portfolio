@@ -25,7 +25,6 @@ main {
             padding: 30px;
             }
 
-
         h2 {
             font-size: 5rem;
             padding: 0 0 20px 0;
@@ -90,11 +89,8 @@ main {
         
     }
     .competences {
-        display: grid;
+        @include mixins.displayGrid;
         grid-template-columns: 1fr 1fr 1fr ;
-        justify-content: center;
-        place-items: center;
-        gap: 50px;
         @media (max-width:1024px){
             gap: 20px;
             grid-template-columns: 1fr 1fr;
@@ -111,19 +107,13 @@ main {
         @include mixins.displayFlex;
 
         &_buttons {
-            display: grid;
+            @include mixins.displayGrid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;
         }
 
         &_cards {
-            display: grid;
+            @include mixins.displayGrid;
             grid-template-columns: 1fr 1fr 1fr;
-            justify-content: center;
-            place-items: center;
-            gap: 50px;
         }
 
         &_buttons, &_cards {
