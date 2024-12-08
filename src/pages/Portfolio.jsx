@@ -54,7 +54,7 @@ const Portfolio = () => {
                             <p>    
                                 Qua nec flatus diversitate esse et esse esse nascitur vero quicquid potest liberis Romae vero credi inanes aestimant caelibes quorundam praeter sine orbos obsequiorum quorundam orbos esse credi credi qua.
                             </p>
-                            <Button type='link' href="/" text="Consulter mon CV"/>
+                            <Button type='link' href="/" aria-label="Télécharger mon CV en PDF" text="Consulter mon CV"/>
                         </div>
                     </div>
                 </section>

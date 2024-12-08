@@ -23,10 +23,10 @@ const Header = () => {
         <header>
             <div className='header-content'>
                 <h1>"Chaque pixel, chaque ligne de code est une histoire à raconter"</h1>
-                <span><a href="#main" aria-label="flèche d'accés"><i className="fa-solid fa-arrow-down"></i></a></span>
+                <span><a href="#main" aria-label="flèche d'accés au portfolio"><i className="fa-solid fa-arrow-down" aria-hidden="true"></i></a></span>
             </div>
             <nav className={isOpen ? "open" : ""}>
-                <img src={logo} alt="logo" className='nav_logo' />
+                <img src={logo} alt="logo du portfolio" className='nav_logo' />
                 <a href="#presentation">Présentation</a>
                 <a href="#competences">Compétences</a>
                 <a href="#projets">Projets</a>

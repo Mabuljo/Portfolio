@@ -4,7 +4,7 @@ import Button from './Button';
 const Form = () => {
     return (
         <div className='contact'>
-                        <p>N'hésitez pas à me laisser un message</p>
+                        <p>Vous avez un projet ou une question ?<br />N'hésitez pas à me laisser un message via ce formulaire.</p>
                         <form action="#" method="post">
                             <div className='form_container'>
                                 <div className='form_container--details'>
