@@ -40,8 +40,7 @@ const Portfolio = () => {
         } else {
             document.body.classList.remove('active-modal'); // Retire la classe quand modal est false
         }
-    }, [modal]); // Effectue l'effet chaque fois que 'modal' change
-
+    }, [modal]);
     return (
         <div>
             <Header />
@@ -51,9 +50,10 @@ const Portfolio = () => {
                     <div className='presentation_content'>
                         <img src={photoPresentation} alt="Marjorie Goudet" />
                         <div className='presentation_content--details'>
-                            <p>    
-                                Qua nec flatus diversitate esse et esse esse nascitur vero quicquid potest liberis Romae vero credi inanes aestimant caelibes quorundam praeter sine orbos obsequiorum quorundam orbos esse credi credi qua.
-                            </p>
+                            
+                            <p>Curieuse et touche-à-tout, j'ai toujours été attirée par le monde de l'informatique.</p>
+                            <p>En reconversion professionnelle, je me suis tout naturellement tournée vers la conception de sites web et j'ai suivi la formation diplômante d'intégrateur web chez OpenClassrooms.</p>
+                            <p>Passionnée, je me spécialise dans le langage JavaScript et React.js afin de créer des applications web dynamiques</p>
                             <Button type='link' href="/" aria-label="Télécharger mon CV en PDF" text="Consulter mon CV"/>
                         </div>
                     </div>
@@ -104,7 +104,7 @@ const Portfolio = () => {
                     <Form />
                  </section>
                  {/* Affichage conditionnel de la modale */}
-                 {modal && <Modal projet={selectedProjet} toggleModal={toggleModal} />}
+                 {modal && <Modal projet={selectedProjet} toggleModal={toggleModal} isOpen={modal}/>}
             </main>
             <Footer />
         </div>

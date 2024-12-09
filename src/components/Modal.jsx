@@ -1,11 +1,11 @@
 import React from 'react';
 import Button from './Button';
 
-const Modal = ({projet, toggleModal}) => {
+const Modal = ({projet, toggleModal, isOpen}) => {
 
     return (
         <div className='modal'>
-            <div className='modal_container' onClick={toggleModal}>
+      <div className={`modal_container ${isOpen ? 'is-open' : ''}`} onClick={toggleModal}>
                 <img src={projet.cover} alt={projet.title} />
                 <div className='modal_content'>
                     <h4>{projet.title}</h4>

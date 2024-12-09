@@ -9,6 +9,11 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
 
+    // Fonction pour fermer le menu burger lorsqu'un onglet est sélectionné
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     // Fonction pour l'ajout/retrait de la classe active-menu sur le body
     useEffect(() => {
         if (isOpen) {
@@ -16,7 +21,7 @@ const Header = () => {
         } else {
             document.body.classList.remove('active-menu');
         }
-    }, [isOpen]); // S'exécute à chaque changement de isOpen
+    }, [isOpen]);
 
 
     return (
@@ -25,13 +30,13 @@ const Header = () => {
                 <h1>"Chaque pixel, chaque ligne de code est une histoire à raconter"</h1>
                 <span><a href="#main" aria-label="flèche d'accés au portfolio"><i className="fa-solid fa-arrow-down" aria-hidden="true"></i></a></span>
             </div>
-            <nav className={isOpen ? "open" : ""}>
+            <nav className={isOpen ? "openMenu" : ""}>
                 <img src={logo} alt="logo du portfolio" className='nav_logo' />
-                <a href="#presentation">Présentation</a>
-                <a href="#competences">Compétences</a>
-                <a href="#projets">Projets</a>
-                <a href="#contact">Contact</a>
-                <a href="/">Mon CV</a>
+                <a href="#presentation" onClick={closeMenu}>Présentation</a>
+                <a href="#competences" onClick={closeMenu}>Compétences</a>
+                <a href="#projets" onClick={closeMenu}>Projets</a>
+                <a href="#contact" onClick={closeMenu}>Contact</a>
+                <a href="/" onClick={closeMenu}>Mon CV</a>
             </nav>
             <i className={`fa-solid menu ${isOpen ? "fa-xmark" : "fa-bars"}`} onClick={toggleMenu}></i>
         </header>

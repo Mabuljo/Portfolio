@@ -83,7 +83,7 @@
             "Créer une page web dynamique en utilisant Javascript.",
             "Apprendre à communiquer avec une API.",
             "Manipuler les éléments du DOM avec JavaScript.",
-            "Créer une formulaire de connexion.",
+            "Créer un formulaire de connexion.",
 			"Créer une modale afin d'ajouter de nouvelles données."
         ],
 		"technologies": [
@@ -122,7 +122,7 @@
             "Optimiser le référencement d'un site d'une photographe.",
             "Réaliser un audit initial avec Lighthouse afin d'identifier les problèmes de chargement et de référencement.",
             "Améliorer les performances et l'accessibilité du site en utilsant les outils Lighthouse et Wave.",
-            "Ajouter le référencement local avec schema.org.",
+            "Optimiser le référencement local sur les moteurs de recherches grâce aux Rich Snippets.",
 			"Intégrer les métadonnées pour les réseaux sociaux",
 			"Réaliser un rapport d'audit complet après amélioration du site."
         ],
