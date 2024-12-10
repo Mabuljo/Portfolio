@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react';
 import Header from '../components/Header';
-import photoPresentation from '../assets/images/marjo-sepia.webp';
 import Button from '../components/Button';
 import Icon from '../components/Icon';
 import Projets from "../datas/projets.json";
@@ -48,7 +47,7 @@ const Portfolio = () => {
                 <section id='presentation'>
                     <h2>Présentation</h2>
                     <div className='presentation_content'>
-                        <img src={photoPresentation} alt="Marjorie Goudet" />
+                        <img src="/assets/images/marjo-sepia.webp" alt="Marjorie Goudet" />
                         <div className='presentation_content--details'>
                             
                             <p>Curieuse et touche-à-tout, j'ai toujours été attirée par le monde de l'informatique.</p>
@@ -63,7 +62,7 @@ const Portfolio = () => {
                     <h2>Compétences</h2>
                     <div className='competences'>
                         {iconNames.map((iconName, index) => {
-                            const imagePath = require(`../assets/icones/${iconName}.png`)
+                            const imagePath =`/assets/icones/${iconName}.png`;
                             return (
                                 <Icon key={index} src={imagePath} alt={iconName} />
                             )

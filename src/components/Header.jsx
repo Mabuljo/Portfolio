@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../assets/images/logo.webp";
 
 const Header = () => {
 
@@ -31,7 +30,7 @@ const Header = () => {
                 <span><a href="#main" aria-label="flèche d'accés au portfolio"><i className="fa-solid fa-arrow-down" aria-hidden="true"></i></a></span>
             </div>
             <nav className={isOpen ? "openMenu" : ""}>
-                <img src={logo} alt="logo du portfolio" className='nav_logo' />
+                <img src="logo.webp" alt="logo du portfolio" className='nav_logo' />
                 <a href="#presentation" onClick={closeMenu}>Présentation</a>
                 <a href="#competences" onClick={closeMenu}>Compétences</a>
                 <a href="#projets" onClick={closeMenu}>Projets</a>
