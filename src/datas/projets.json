@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"title": "Riding Cities",
-		"cover": "/projets/riding_cities.webp",
+		"cover": "/assets/projets/riding_cities.webp",
 		"description": [
 			"Mettre à jour la page internet d'une association sportive.",
 			"Premiers pas sur le langage HTML.",
@@ -19,7 +19,7 @@
 	{
 		"id": 2,
 		"title": "Booki",
-		"cover": "/projets/booki.webp",
+		"cover": "/assets/projets/booki.webp",
 		"description": [
 			"Créer la page d'accueil d'une agence de voyage avec HTML et CSS.",
             "Installer un environnement de développement front-end.",
@@ -38,7 +38,7 @@
     {
 		"id": 3,
 		"title": "Ohmyfood",
-		"cover": "/projets/ohmyfood.webp",
+		"cover": "/assets/projets/ohmyfood.webp",
 		"description": [
 			"Améliorer l'interface du site mobile d'une start-up avec des animations CSS.",
             "Intégrer une maquette en mobile-first.",
@@ -57,7 +57,7 @@
 	{
 		"id": 4,
 		"title": "Printit",
-		"cover": "/projets/printit.webp",
+		"cover": "/assets/projets/printit.webp",
 		"description": [
 			"Dynamiser le site internet statique d'une imprimerie.",
             "Explorer les fondamentaux du langage JavaScript.",
@@ -77,7 +77,7 @@
 	{
 		"id": 5,
 		"title": "Sophie Bluel",
-		"cover": "/projets/sophie_bluel.webp",
+		"cover": "/assets/projets/sophie_bluel.webp",
 		"description": [
 			"Créer le site portfolio d'une architecte d'intérieur.",
             "Créer une page web dynamique en utilisant Javascript.",
@@ -97,7 +97,7 @@
 	{
 		"id": 6,
 		"title": "Kasa",
-		"cover": "/projets/kasa.webp",
+		"cover": "/assets/projets/kasa.webp",
 		"description": [
             "Créer une application web de location immobilière avec React.",
             "Configurer la navigation entre les pages de l'application avec React Router.",
@@ -117,7 +117,7 @@
 	{
 		"id": 7,
 		"title": "Nina Carducci",
-		"cover": "/projets/nina_carducci.webp",
+		"cover": "/assets/projets/nina_carducci.webp",
 		"description": [
             "Optimiser le référencement d'un site d'une photographe.",
             "Réaliser un audit initial avec Lighthouse afin d'identifier les problèmes de chargement et de référencement.",
@@ -138,7 +138,7 @@
 	{
 		"id": 8,
 		"title": "Argent Bank",
-		"cover": "/projets/argentbank.webp",
+		"cover": "/assets/projets/argentbank.webp",
 		"description": [
             "Implémenter le front-end d'une application bancaire avec React.",
             "Intégrer le front-end avec le back-end via des appels API.",
