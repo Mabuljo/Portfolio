@@ -1,8 +1,10 @@
 @use '../settings';
 @use"./mixins";
 
-.active-menu {
-    overflow-y: hidden; // Empêche le défilement de l'arrière-plan quand le menu burger est ouvert
+.active-menu { // Empêche le défilement de l'arrière-plan quand le menu burger est ouvert
+    overflow-y: hidden; 
+    position: fixed;
+    width: 100%;
 }
 
 header {
@@ -152,7 +154,7 @@ header {
     .fa-xmark {
         color: settings.$main-color;
         background: none;
-}
+    }
 }
 
 

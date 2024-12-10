@@ -8,12 +8,15 @@ main {
     #presentation {
         border-radius:0 0 25px 25px;
         @media (max-width: 768px){
-            border-radius: 25px;
+            border-radius: 10px;
         }
     }
 
     #competences, #projets, #contact {
         border-radius: 25px;
+        @media (max-width: 768px){
+            border-radius: 10px;
+        }
     }
     
     section {

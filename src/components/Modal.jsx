@@ -5,7 +5,7 @@ const Modal = ({projet, toggleModal, isOpen}) => {
 
     return (
         <div className='modal'>
-      <div className={`modal_container ${isOpen ? 'is-open' : ''}`} onClick={toggleModal}>
+      <div className={`modal_container ${isOpen ? 'is-open' : ''}`} >
                 <img src={projet.cover} alt={projet.title} />
                 <div className='modal_content'>
                     <h4>{projet.title}</h4>
