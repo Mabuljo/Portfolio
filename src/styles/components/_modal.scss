@@ -4,6 +4,7 @@
 .active-modal {
     overflow-y: hidden;
 }
+
 .modal {
     position: fixed;
     top: 0;
@@ -14,13 +15,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+
+    // Animation de la modale
+    opacity: 0; 
+    transition: opacity 5s ease;
+
+    &.is-open {
+        opacity: 1; 
+    }
+
 
     @media (max-width:768px){
         padding: 0 15px;
     }
 
     &_container {
-        overflow: auto;
         background-color: settings.$background-color;
         width: 800px;
         max-width: calc(100vw - 20px);
@@ -33,18 +43,9 @@
         border-radius: 25px;
         position: relative;
         box-sizing: border-box;
+
         @media (max-width:768px){
             border-radius: 10px;
-        }
-
-        opacity: 0;
-        transform: scale(0.6);
-        transition: opacity 1s ease, transform 1s ease;
-        transition-delay: 0.2s;
-
-        &.is-open {
-            opacity: 1;
-            transform: scale(1); 
         }
 
         img {

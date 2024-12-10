@@ -4,8 +4,8 @@ import Button from './Button';
 const Modal = ({projet, toggleModal, isOpen}) => {
 
     return (
-        <div className='modal'>
-      <div className={`modal_container ${isOpen ? 'is-open' : ''}`} >
+        <div className={`modal ${isOpen ? 'is-open' : ''}`}>
+            <div className='modal_container'>
                 <img src={projet.cover} alt={projet.title} />
                 <div className='modal_content'>
                     <h4>{projet.title}</h4>

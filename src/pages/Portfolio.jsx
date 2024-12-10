@@ -49,10 +49,7 @@ const Portfolio = () => {
                     <div className='presentation_content'>
                         <img src="/assets/images/marjo-sepia.webp" alt="Marjorie Goudet" />
                         <div className='presentation_content--details'>
-                            
-                            <p>Curieuse et touche-à-tout, j'ai toujours été attirée par le monde de l'informatique.</p>
-                            <p>En reconversion professionnelle, je me suis tout naturellement tournée vers la conception de sites web et j'ai suivi la formation diplômante d'intégrateur web chez OpenClassrooms.</p>
-                            <p>Passionnée, je me spécialise dans le langage JavaScript et React.js afin de créer des applications web dynamiques</p>
+                            <p>Curieuse et touche-à-tout, j'ai toujours été attirée par le monde de l'informatique.<br/>En reconversion professionnelle, je me suis tout naturellement tournée vers la conception de sites web et j'ai suivi la formation diplômante d'intégrateur web chez OpenClassrooms.<br/>Passionnée, je me spécialise dans le langage JavaScript et React afin de créer des applications web dynamiques.</p>
                             <Button type='link' href="/assets/cv_marjorie_goudet.pdf" aria-label="Télécharger mon CV en PDF" text="Consulter mon CV (PDF)"/>
                         </div>
                     </div>
