@@ -41,10 +41,10 @@
         border-radius: 25px;
         position: relative;
         box-sizing: border-box;
+        overflow-y: auto;
 
         @media (max-width:768px){
             border-radius: 10px;
-            width: 400px;
         }
 
         img {
