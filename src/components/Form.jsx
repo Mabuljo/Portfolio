@@ -25,7 +25,7 @@ const Form = () => {
 
     return (
         <div className='contact'>
-            <p>Vous avez un projet ou une question ?<br />N'hésitez pas à me laisser un message via ce formulaire.</p>
+            <p>Vous avez un projet ou une question?<br />N'hésitez pas à me laisser un message via ce formulaire.</p>
             <form ref={formRef} onSubmit={sendEmail}>
                 <div className='form_container'>
                     <div className='form_container--details'>

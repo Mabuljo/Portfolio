@@ -52,12 +52,11 @@
             font-size: 3rem;
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
-
+            @media (max-width:1024px){
+                font-size: 1.5rem;
+            }
             &:hover {
                 opacity: 1;
-            }
-            @media (max-width:1024px){
-                font-size: 2rem;
             }
         }
     }
