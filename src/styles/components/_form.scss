@@ -1,5 +1,6 @@
 @use"../settings";
 @use"../layouts/mixins";
+@use"../layouts/animations";
 
 .contact {
     @include mixins.displayFlex;
@@ -68,6 +69,11 @@
     
     .form-message.error {
         color: #e53e3e; 
+    }
+
+    .fa-spinner {
+        color: settings.$main-color;
+        animation: spinner 1s linear infinite;
     }
     
 }

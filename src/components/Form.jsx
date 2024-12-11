@@ -7,9 +7,11 @@ const Form = () => {
     const formRef = useRef();
     const [message, setMessage] = useState(''); // State pour le message de confirmation ou d'erreur
     const [isError, setIsError] = useState(false); // State pour gérer si erreur d'envoi ou pas
+    const [isLoading, setIsLoading] = useState(false); // State pour le loader 
 
     const sendEmail = (e) => {
         e.preventDefault();
+        setIsLoading(true); // Active le loader
         emailjs
             .sendForm('service_4dea2ln', 'template_emiv9mj', formRef.current, '7n2CI-dcbl5POYSfd')
             .then(() => {
@@ -20,6 +22,9 @@ const Form = () => {
             .catch(() => {
                 setMessage('Une erreur est survenue, veuillez réessayer.');
                 setIsError(true); // Erreur détectée
+            })
+            .finally(() => {
+                setIsLoading(false); // Désactive le loader après l'envoi
             });
     };
 
@@ -41,7 +46,7 @@ const Form = () => {
                         <textarea name="message" id="message" rows="10" required></textarea>
                     </div>
                 </div>
-                <Button type='submit' text="Envoyer" />
+                <Button type='submit' text={isLoading ? (<i class="fa-solid fa-spinner"></i>) : 'Envoyer'} />
                 {message && (
                 <p className={`form-message ${isError ? 'error' : ''}`}>{message}</p>
                 )}  
