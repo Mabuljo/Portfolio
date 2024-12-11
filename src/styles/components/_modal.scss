@@ -30,7 +30,7 @@
 
     &_container {
         background-color: settings.$background-color;
-        width: 800px;
+        width: 600px;
         max-width: calc(100vw - 20px);
         max-height: calc(100vh - 20px);
         padding: 30px 20px 10px 20px;
@@ -44,6 +44,7 @@
 
         @media (max-width:768px){
             border-radius: 10px;
+            width: 500px;
         }
 
         img {
@@ -51,6 +52,9 @@
             width: 90%;
             height: 300px;
             border-radius: 25px;
+            @media (max-width:768px){
+                height: 250px;
+            }
         }
     }
 
@@ -62,6 +66,9 @@
         margin:10px 0;
         padding: 0 10px;
         box-sizing: border-box;
+        @media (max-width:768px){
+            margin-top: 0;
+        }
 
         h4 {
             font-size: 2.5rem;
@@ -78,15 +85,16 @@
             flex-direction: column;
             justify-content: center;
             text-align: left;
+            @media (max-width:768px){
+                margin-top: 0;
+            }
         }
 
         &--buttons{
             display: flex;
             justify-content: space-around;
             gap: 20px;
-            @media (max-width:768px){
-                flex-direction: column;
-            }
+
         }
     }
     .close-modal {
