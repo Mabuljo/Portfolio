@@ -15,20 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
 
-    // Animation de la modale
+    // Animation de la modale (état initial)
     opacity: 0; 
-    transition: opacity 5s ease;
-
-    &.is-open {
-        opacity: 1; 
-    }
-
+    transition: opacity 0.5s ease-out;
 
     @media (max-width:768px){
         padding: 0 15px;
     }
+
+    &.is-open {
+        opacity: 1; 
+    } 
 
     &_container {
         background-color: settings.$background-color;
@@ -99,4 +97,5 @@
         padding: 5px 7px;
     }
 }
+
 
