@@ -58,7 +58,7 @@ main {
 
             @media (max-width: 1024px){
                 font-size: 3rem;
-                padding: 0 0 20px 0;
+                // padding: 0 0 20px 0;
             }
             @media (max-width: 768px){
                 font-size: 2.5rem;
@@ -100,11 +100,11 @@ main {
         @media (max-width:1024px){
             gap: 20px;
             grid-template-columns: 50% 50%;
-            img {height: 80%;} 
+            .icon {height: 80%;} 
         }
         @media (max-width:768px){
             gap: 0;
-            img {height: 50%;}
+            .icon {height: 50%;}
         }
     }
 

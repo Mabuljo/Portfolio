@@ -13,7 +13,7 @@ const Header = () => {
         setIsOpen(false);
     };
 
-    // Fonction pour l'ajout/retrait de la classe active-menu sur le body
+    // Fonction pour l'ajout/retrait de la classe active-menu sur le body (responsive mobile)
     useEffect(() => {
         if (isOpen) {
             document.body.classList.add('active-menu');

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Button = ({ type = "button", text, href, onClick, disabled = false, isSelected }) => {
+const Button = ({ type = "button", text, href, onClick, disabled = false, isSelected, newTab }) => {
     switch (type) {
         case "link": // Retourne un lien <a> si le type est "link"
             return (
-                <a href={href} target='_blank' rel="noopener noreferrer" className='btn link'>{text}</a>
+                <a href={href} target={newTab ? '_blank' : '_self'} rel="noopener noreferrer" className='btn link'>{text}</a>
             );
         case "submit": // Retourne un bouton de type "submit"
             return (

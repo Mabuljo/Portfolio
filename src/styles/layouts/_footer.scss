@@ -17,7 +17,24 @@ footer {
         height: 100px;
         border-radius: 25px 25px 0 0;
     }
-    
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link_mentions {
+        margin-right: 10px;
+        &:visited {
+            color: settings.$main-color;
+        }
+        @media (max-width: 768px){
+            font-size: 1rem;
+        }
+
+    }
+
     .reseaux {
         font-size: 2rem;
         min-width: 100px;
