@@ -76,15 +76,11 @@
         }
 
         .link_form {
+            color: settings.$main-color;
             font-weight: 600;
             &:visited {
                 color: settings.$main-color;
             }
         }
-
-
-    }
-    
-
-    
+    }  
 }

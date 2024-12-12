@@ -25,6 +25,7 @@ footer {
     }
 
     .link_mentions {
+        color: settings.$main-color;
         margin-right: 10px;
         &:visited {
             color: settings.$main-color;
@@ -32,7 +33,6 @@ footer {
         @media (max-width: 768px){
             font-size: 1rem;
         }
-
     }
 
     .reseaux {
